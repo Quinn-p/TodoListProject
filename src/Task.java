@@ -1,43 +1,36 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
 
 public class Task {
     private String name;
     private int day;
 
-    public Task() {
-        this.name = "N/A";
-        this.day = -1;
+    public Task(){
+        name = "N/A";
+        day = -1;
     }
 
-    public Task(String var1, int var2) {
-        this.name = var1;
-        this.day = var2;
+    public Task(String task, int day){
+        this.name = task;
+        this.day = day;
     }
 
     public int getDay() {
-        return this.day;
+        return day;
     }
 
     public String getTaskName() {
-        return this.name;
+        return name;
     }
 
-    public void setDay(int var1) {
-        this.day = var1;
+    public void setDay(int day) {
+        this.day = day;
     }
 
-    public void setTaskName(String var1) {
-        this.name = var1;
+    public void setTaskName(String task) {
+        this.name = task;
     }
 
-    public String toString() {
-        return String.format("Name: %s Date: %d", this.getTaskName(), this.getDay());
+    @Override
+    public String toString(){
+        return String.format("Name: %s Date: %d",getTaskName(),getDay());
     }
 }
-
-
-
-
